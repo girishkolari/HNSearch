@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		976B6A180870C3AA382B1986 /* Pods_HNSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30DE90DF795AB83802329DE /* Pods_HNSearch.framework */; };
+		D1047A8B1C299A8900E822AB /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1047A8A1C299A8900E822AB /* SegueHandlerType.swift */; };
+		D12444561C22CB6D004213C8 /* HTTPURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12444551C22CB6D004213C8 /* HTTPURL.swift */; };
+		D12444581C22CBEF004213C8 /* Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12444571C22CBEF004213C8 /* Param.swift */; };
+		D124445A1C22CC08004213C8 /* DataValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12444591C22CC08004213C8 /* DataValue.swift */; };
+		D16761871C1C4F65007FDC37 /* HNSearchManagerTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16761861C1C4F65007FDC37 /* HNSearchManagerTableViewAdapter.swift */; };
+		D16761891C1C4FA8007FDC37 /* HNSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16761881C1C4FA8007FDC37 /* HNSearchManager.swift */; };
+		D167618B1C1C4FB8007FDC37 /* HNItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D167618A1C1C4FB8007FDC37 /* HNItem.swift */; };
+		D167618D1C1C585D007FDC37 /* HNSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D167618C1C1C585D007FDC37 /* HNSearchController.swift */; };
+		D167618F1C1C5C87007FDC37 /* HNSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D167618E1C1C5C87007FDC37 /* HNSearch.swift */; };
+		D1AF5F581C19FC07003BF5D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF5F571C19FC07003BF5D1 /* AppDelegate.swift */; };
+		D1AF5F5A1C19FC07003BF5D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF5F591C19FC07003BF5D1 /* ViewController.swift */; };
+		D1AF5F5D1C19FC07003BF5D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AF5F5B1C19FC07003BF5D1 /* Main.storyboard */; };
+		D1AF5F5F1C19FC07003BF5D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1AF5F5E1C19FC07003BF5D1 /* Assets.xcassets */; };
+		D1AF5F621C19FC07003BF5D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1AF5F601C19FC07003BF5D1 /* LaunchScreen.storyboard */; };
+		D1AF5F6D1C19FC07003BF5D1 /* HNSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF5F6C1C19FC07003BF5D1 /* HNSearchTests.swift */; };
+		D1AF5F781C19FC07003BF5D1 /* HNSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF5F771C19FC07003BF5D1 /* HNSearchUITests.swift */; };
+		D1D7CDA21C2430B40068E9AF /* DetailedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D7CDA11C2430B40068E9AF /* DetailedController.swift */; };
+		D1F14F921C2599BF00FB3F5C /* HNSearchControllerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F14F911C2599BF00FB3F5C /* HNSearchControllerAdapter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1AF5F691C19FC07003BF5D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1AF5F4C1C19FC07003BF5D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1AF5F531C19FC07003BF5D1;
+			remoteInfo = HNSearch;
+		};
+		D1AF5F741C19FC07003BF5D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1AF5F4C1C19FC07003BF5D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1AF5F531C19FC07003BF5D1;
+			remoteInfo = HNSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5EF0F9ADCF88A09F3A3DFDEF /* Pods-HNSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HNSearch/Pods-HNSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		C30DE90DF795AB83802329DE /* Pods_HNSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HNSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1047A8A1C299A8900E822AB /* SegueHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandlerType.swift; sourceTree = "<group>"; };
+		D12444551C22CB6D004213C8 /* HTTPURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPURL.swift; sourceTree = "<group>"; };
+		D12444571C22CBEF004213C8 /* Param.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Param.swift; sourceTree = "<group>"; };
+		D12444591C22CC08004213C8 /* DataValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataValue.swift; sourceTree = "<group>"; };
+		D16761861C1C4F65007FDC37 /* HNSearchManagerTableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNSearchManagerTableViewAdapter.swift; sourceTree = "<group>"; };
+		D16761881C1C4FA8007FDC37 /* HNSearchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNSearchManager.swift; sourceTree = "<group>"; };
+		D167618A1C1C4FB8007FDC37 /* HNItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNItem.swift; sourceTree = "<group>"; };
+		D167618C1C1C585D007FDC37 /* HNSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNSearchController.swift; sourceTree = "<group>"; };
+		D167618E1C1C5C87007FDC37 /* HNSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNSearch.swift; sourceTree = "<group>"; };
+		D1AF5F541C19FC07003BF5D1 /* HNSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HNSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1AF5F571C19FC07003BF5D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1AF5F591C19FC07003BF5D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D1AF5F5C1C19FC07003BF5D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1AF5F5E1C19FC07003BF5D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1AF5F611C19FC07003BF5D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1AF5F631C19FC07003BF5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1AF5F681C19FC07003BF5D1 /* HNSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HNSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1AF5F6C1C19FC07003BF5D1 /* HNSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNSearchTests.swift; sourceTree = "<group>"; };
+		D1AF5F6E1C19FC07003BF5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1AF5F731C19FC07003BF5D1 /* HNSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HNSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1AF5F771C19FC07003BF5D1 /* HNSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HNSearchUITests.swift; sourceTree = "<group>"; };
+		D1AF5F791C19FC07003BF5D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1D7CDA11C2430B40068E9AF /* DetailedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedController.swift; sourceTree = "<group>"; };
+		D1F14F911C2599BF00FB3F5C /* HNSearchControllerAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HNSearchControllerAdapter.swift; sourceTree = "<group>"; };
+		DECA5C9F04B9AA69B6C34211 /* Pods-HNSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HNSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-HNSearch/Pods-HNSearch.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1AF5F511C19FC07003BF5D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				976B6A180870C3AA382B1986 /* Pods_HNSearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1AF5F651C19FC07003BF5D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1AF5F701C19FC07003BF5D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCF26EAFF831A6D6E34AFB61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EF0F9ADCF88A09F3A3DFDEF /* Pods-HNSearch.debug.xcconfig */,
+				DECA5C9F04B9AA69B6C34211 /* Pods-HNSearch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1AF5F4B1C19FC07003BF5D1 = {
+			isa = PBXGroup;
+			children = (
+				D1AF5F561C19FC07003BF5D1 /* HNSearch */,
+				D1AF5F6B1C19FC07003BF5D1 /* HNSearchTests */,
+				D1AF5F761C19FC07003BF5D1 /* HNSearchUITests */,
+				D1AF5F551C19FC07003BF5D1 /* Products */,
+				CCF26EAFF831A6D6E34AFB61 /* Pods */,
+				DA46881594A5BF606B3B8205 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D1AF5F551C19FC07003BF5D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF5F541C19FC07003BF5D1 /* HNSearch.app */,
+				D1AF5F681C19FC07003BF5D1 /* HNSearchTests.xctest */,
+				D1AF5F731C19FC07003BF5D1 /* HNSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1AF5F561C19FC07003BF5D1 /* HNSearch */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF5F571C19FC07003BF5D1 /* AppDelegate.swift */,
+				D1AF5F591C19FC07003BF5D1 /* ViewController.swift */,
+				D1AF5F5B1C19FC07003BF5D1 /* Main.storyboard */,
+				D1AF5F5E1C19FC07003BF5D1 /* Assets.xcassets */,
+				D1AF5F601C19FC07003BF5D1 /* LaunchScreen.storyboard */,
+				D1AF5F631C19FC07003BF5D1 /* Info.plist */,
+				D16761861C1C4F65007FDC37 /* HNSearchManagerTableViewAdapter.swift */,
+				D16761881C1C4FA8007FDC37 /* HNSearchManager.swift */,
+				D167618A1C1C4FB8007FDC37 /* HNItem.swift */,
+				D167618C1C1C585D007FDC37 /* HNSearchController.swift */,
+				D167618E1C1C5C87007FDC37 /* HNSearch.swift */,
+				D12444551C22CB6D004213C8 /* HTTPURL.swift */,
+				D12444571C22CBEF004213C8 /* Param.swift */,
+				D12444591C22CC08004213C8 /* DataValue.swift */,
+				D1D7CDA11C2430B40068E9AF /* DetailedController.swift */,
+				D1F14F911C2599BF00FB3F5C /* HNSearchControllerAdapter.swift */,
+				D1047A8A1C299A8900E822AB /* SegueHandlerType.swift */,
+			);
+			path = HNSearch;
+			sourceTree = "<group>";
+		};
+		D1AF5F6B1C19FC07003BF5D1 /* HNSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF5F6C1C19FC07003BF5D1 /* HNSearchTests.swift */,
+				D1AF5F6E1C19FC07003BF5D1 /* Info.plist */,
+			);
+			path = HNSearchTests;
+			sourceTree = "<group>";
+		};
+		D1AF5F761C19FC07003BF5D1 /* HNSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF5F771C19FC07003BF5D1 /* HNSearchUITests.swift */,
+				D1AF5F791C19FC07003BF5D1 /* Info.plist */,
+			);
+			path = HNSearchUITests;
+			sourceTree = "<group>";
+		};
+		DA46881594A5BF606B3B8205 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C30DE90DF795AB83802329DE /* Pods_HNSearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1AF5F531C19FC07003BF5D1 /* HNSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1AF5F7C1C19FC07003BF5D1 /* Build configuration list for PBXNativeTarget "HNSearch" */;
+			buildPhases = (
+				55BBC3DF74788B09F7D5300A /* Check Pods Manifest.lock */,
+				D1AF5F501C19FC07003BF5D1 /* Sources */,
+				D1AF5F511C19FC07003BF5D1 /* Frameworks */,
+				D1AF5F521C19FC07003BF5D1 /* Resources */,
+				169294D89B4CB2448930FD30 /* Embed Pods Frameworks */,
+				5D9B71E9097D542EBA987365 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HNSearch;
+			productName = HNSearch;
+			productReference = D1AF5F541C19FC07003BF5D1 /* HNSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1AF5F671C19FC07003BF5D1 /* HNSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1AF5F7F1C19FC07003BF5D1 /* Build configuration list for PBXNativeTarget "HNSearchTests" */;
+			buildPhases = (
+				D1AF5F641C19FC07003BF5D1 /* Sources */,
+				D1AF5F651C19FC07003BF5D1 /* Frameworks */,
+				D1AF5F661C19FC07003BF5D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1AF5F6A1C19FC07003BF5D1 /* PBXTargetDependency */,
+			);
+			name = HNSearchTests;
+			productName = HNSearchTests;
+			productReference = D1AF5F681C19FC07003BF5D1 /* HNSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D1AF5F721C19FC07003BF5D1 /* HNSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1AF5F821C19FC07003BF5D1 /* Build configuration list for PBXNativeTarget "HNSearchUITests" */;
+			buildPhases = (
+				D1AF5F6F1C19FC07003BF5D1 /* Sources */,
+				D1AF5F701C19FC07003BF5D1 /* Frameworks */,
+				D1AF5F711C19FC07003BF5D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1AF5F751C19FC07003BF5D1 /* PBXTargetDependency */,
+			);
+			name = HNSearchUITests;
+			productName = HNSearchUITests;
+			productReference = D1AF5F731C19FC07003BF5D1 /* HNSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1AF5F4C1C19FC07003BF5D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Girish Kolari";
+				TargetAttributes = {
+					D1AF5F531C19FC07003BF5D1 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					D1AF5F671C19FC07003BF5D1 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = D1AF5F531C19FC07003BF5D1;
+					};
+					D1AF5F721C19FC07003BF5D1 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = D1AF5F531C19FC07003BF5D1;
+					};
+				};
+			};
+			buildConfigurationList = D1AF5F4F1C19FC07003BF5D1 /* Build configuration list for PBXProject "HNSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1AF5F4B1C19FC07003BF5D1;
+			productRefGroup = D1AF5F551C19FC07003BF5D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1AF5F531C19FC07003BF5D1 /* HNSearch */,
+				D1AF5F671C19FC07003BF5D1 /* HNSearchTests */,
+				D1AF5F721C19FC07003BF5D1 /* HNSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1AF5F521C19FC07003BF5D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1AF5F621C19FC07003BF5D1 /* LaunchScreen.storyboard in Resources */,
+				D1AF5F5F1C19FC07003BF5D1 /* Assets.xcassets in Resources */,
+				D1AF5F5D1C19FC07003BF5D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1AF5F661C19FC07003BF5D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1AF5F711C19FC07003BF5D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		169294D89B4CB2448930FD30 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HNSearch/Pods-HNSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55BBC3DF74788B09F7D5300A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5D9B71E9097D542EBA987365 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HNSearch/Pods-HNSearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1AF5F501C19FC07003BF5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D167618F1C1C5C87007FDC37 /* HNSearch.swift in Sources */,
+				D167618B1C1C4FB8007FDC37 /* HNItem.swift in Sources */,
+				D167618D1C1C585D007FDC37 /* HNSearchController.swift in Sources */,
+				D1F14F921C2599BF00FB3F5C /* HNSearchControllerAdapter.swift in Sources */,
+				D124445A1C22CC08004213C8 /* DataValue.swift in Sources */,
+				D1047A8B1C299A8900E822AB /* SegueHandlerType.swift in Sources */,
+				D12444561C22CB6D004213C8 /* HTTPURL.swift in Sources */,
+				D1AF5F5A1C19FC07003BF5D1 /* ViewController.swift in Sources */,
+				D1AF5F581C19FC07003BF5D1 /* AppDelegate.swift in Sources */,
+				D12444581C22CBEF004213C8 /* Param.swift in Sources */,
+				D16761871C1C4F65007FDC37 /* HNSearchManagerTableViewAdapter.swift in Sources */,
+				D16761891C1C4FA8007FDC37 /* HNSearchManager.swift in Sources */,
+				D1D7CDA21C2430B40068E9AF /* DetailedController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1AF5F641C19FC07003BF5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1AF5F6D1C19FC07003BF5D1 /* HNSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1AF5F6F1C19FC07003BF5D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1AF5F781C19FC07003BF5D1 /* HNSearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1AF5F6A1C19FC07003BF5D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1AF5F531C19FC07003BF5D1 /* HNSearch */;
+			targetProxy = D1AF5F691C19FC07003BF5D1 /* PBXContainerItemProxy */;
+		};
+		D1AF5F751C19FC07003BF5D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1AF5F531C19FC07003BF5D1 /* HNSearch */;
+			targetProxy = D1AF5F741C19FC07003BF5D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D1AF5F5B1C19FC07003BF5D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1AF5F5C1C19FC07003BF5D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D1AF5F601C19FC07003BF5D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1AF5F611C19FC07003BF5D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1AF5F7A1C19FC07003BF5D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1AF5F7B1C19FC07003BF5D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1AF5F7D1C19FC07003BF5D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EF0F9ADCF88A09F3A3DFDEF /* Pods-HNSearch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HNSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kolari.HNSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D1AF5F7E1C19FC07003BF5D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DECA5C9F04B9AA69B6C34211 /* Pods-HNSearch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HNSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kolari.HNSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D1AF5F801C19FC07003BF5D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HNSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kolari.HNSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HNSearch.app/HNSearch";
+			};
+			name = Debug;
+		};
+		D1AF5F811C19FC07003BF5D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HNSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kolari.HNSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HNSearch.app/HNSearch";
+			};
+			name = Release;
+		};
+		D1AF5F831C19FC07003BF5D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HNSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kolari.HNSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HNSearch;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D1AF5F841C19FC07003BF5D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HNSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kolari.HNSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HNSearch;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1AF5F4F1C19FC07003BF5D1 /* Build configuration list for PBXProject "HNSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1AF5F7A1C19FC07003BF5D1 /* Debug */,
+				D1AF5F7B1C19FC07003BF5D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1AF5F7C1C19FC07003BF5D1 /* Build configuration list for PBXNativeTarget "HNSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1AF5F7D1C19FC07003BF5D1 /* Debug */,
+				D1AF5F7E1C19FC07003BF5D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1AF5F7F1C19FC07003BF5D1 /* Build configuration list for PBXNativeTarget "HNSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1AF5F801C19FC07003BF5D1 /* Debug */,
+				D1AF5F811C19FC07003BF5D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1AF5F821C19FC07003BF5D1 /* Build configuration list for PBXNativeTarget "HNSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1AF5F831C19FC07003BF5D1 /* Debug */,
+				D1AF5F841C19FC07003BF5D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1AF5F4C1C19FC07003BF5D1 /* Project object */;
+}
