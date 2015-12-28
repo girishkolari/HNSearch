@@ -195,6 +195,7 @@
 				D1AF5F521C19FC07003BF5D1 /* Resources */,
 				169294D89B4CB2448930FD30 /* Embed Pods Frameworks */,
 				5D9B71E9097D542EBA987365 /* Copy Pods Resources */,
+				D17AECD41C3129BB00310EC7 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -356,6 +357,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HNSearch/Pods-HNSearch-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		D17AECD41C3129BB00310EC7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 

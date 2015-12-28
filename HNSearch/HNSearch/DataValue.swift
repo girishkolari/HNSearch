@@ -17,30 +17,29 @@ import Foundation
 ///
 ///
 public protocol DataValue {
-    
     func dataValue() -> String
 }
 
 ///
 ///
 extension String : DataValue {
-    public func dataValue() -> String{
+    // String support protocol DataValue
+    public func dataValue() -> String {
         return self
     }
 }
 
 extension Int : DataValue {
-    public func dataValue() -> String{
+    public func dataValue() -> String {
         return String(self)
     }
 }
 
 extension Array : DataValue {
-    public func dataValue() -> String{
+    public func dataValue() -> String {
         let ret = self.reduce("") { intitial, item in
             return intitial + "," + String(item)
         }
         return "(" + String(ret.characters.dropFirst()) + ")"
     }
-    
 }

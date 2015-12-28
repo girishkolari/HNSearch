@@ -18,16 +18,11 @@ class DetailedController: UIViewController {
     @IBOutlet weak var storyTitle: UILabel!
 
     @IBOutlet weak var details: UITextView!
-    
     var hnItem: HNItem?
-    
-    
     override func viewWillAppear(animated: Bool) {
-        
         if let hnItem = hnItem {
-            storyTitle.text = hnItem.title ?? hnItem.story_title
-            
-            details.text = hnItem.comment_text ?? ""
+            storyTitle.text = hnItem.title ?? hnItem.storyTitle
+            details.text = hnItem.commentText ?? ""
 
         }
 

@@ -40,7 +40,6 @@ class ViewController: UIViewController {
     "author" : {
     "value" : "psuter",
     "matchedWords" : [
-    
     ],
     "matchLevel" : "none"
     }
@@ -56,12 +55,9 @@ class ViewController: UIViewController {
     "url" : "https:\/\/swift.org\/"
     }
 */
-    
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

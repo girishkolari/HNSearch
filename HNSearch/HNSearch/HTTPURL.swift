@@ -23,27 +23,20 @@ protocol HTTPURL {
 }
 
 extension HTTPURL {
-    
     var webURL: String {
         return webURL
     }
-    
     var params: [String:String] {
         let paras = paramList
         let ret = paras.reduce([String:String]()) { initialvalue, item in
-            var retDic:[String:String] = initialvalue
+            var retDic: [String: String] = initialvalue
             if let dic = item.paramValue {
                 for (key, value) in dic {
                     retDic.updateValue(value, forKey: key)
                 }
             }
-            
             return retDic
         }
-        
         return ret
     }
 }
-
-
-

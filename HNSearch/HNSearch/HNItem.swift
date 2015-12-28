@@ -16,60 +16,51 @@ import Foundation
 import SwiftyJSON
 
 
-struct HNItem : CustomStringConvertible{
+struct HNItem: CustomStringConvertible {
     var objectID: String
-    var created_at_i: Int
-    var parent_id: Int?
+    var createdAt: Int
+    var parentID: Int?
     var points: Int
     var title: String?
-    var story_title: String?
-    var comment_text: String?
+    var storyTitle: String?
+    var commentText: String?
     var url: String?
-    
     var description: String {
-        var returnString = "objectID: " + String(objectID) + " created_at_i: " + String(created_at_i) + " points: " + String(points)
-        
-        
-        if let parent_id = parent_id {
+        var returnString = "objectID: " +
+            String(objectID) +
+            " created_at_i: " +
+            String(createdAt) +
+            " points: " +
+            String(points)
+        if let parent_id = parentID {
             returnString += " parent_id: " + String(parent_id)
         }
-        
         if let title = title {
             returnString += " title: " + title
         }
-        
-        if let story_title = story_title {
+        if let story_title = storyTitle {
             returnString += " story_title: " + story_title
         }
-        
-        if let comment_text = comment_text {
+        if let comment_text = commentText {
             returnString += " comment_text: " + comment_text
         }
-        
         if let url = url {
             returnString += " url: " + url
         }
-        
-        
         return  returnString + "\n\n"
     }
 }
 
 
-extension HNItem{
+extension HNItem {
     init(jsonItem: JSON) {
         self.title = jsonItem["title"].string
-        self.story_title = jsonItem["story_title"].string
+        self.storyTitle = jsonItem["story_title"].string
         self.objectID = jsonItem["objectID"].string ?? "0"
-        self.created_at_i = jsonItem["created_at_i"].int ?? 0
-        self.parent_id = jsonItem["parent_id"].int
-        self.comment_text = jsonItem["comment_text"].string
+        self.createdAt = jsonItem["created_at_i"].int ?? 0
+        self.parentID = jsonItem["parent_id"].int
+        self.commentText = jsonItem["comment_text"].string
         self.points = jsonItem["points"].int ?? 0
         self.url = jsonItem["url"].string
-        
-        
     }
 }
-
-
-

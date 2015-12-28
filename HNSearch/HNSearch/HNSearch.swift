@@ -14,42 +14,35 @@
 
 import Foundation
 
-enum Search : String{
-    case search_by_date = "search_by_date"
-    case search = "search"
-    
+enum Search: String {
+    case SearchByDate = "search_by_date"
+    case Search = "search"
 }
 
 enum HNSearchParams: String {
-    case query = "query"
-    case tags = "tags"
-    case numericFilters = "numericFilters"
-    case page = "page"
+    case Query = "query"
+    case Tags = "tags"
+    case NumericFilters = "numericFilters"
+    case Page = "page"
 }
 
 
 ///
 ///
 public struct HNSearch: HTTPURL {
-    
     let url: String
-    var searchBy: Search = .search_by_date
+    var searchBy: Search = .SearchByDate
     var search = Param("query")
     var tag = Param("tags")
     var filters = Param("numericFilters")
     var pageNumber = Param("page")
-    
     init() {
         self.url = "http://hn.algolia.com/api/v1/"
     }
-    
     var webURL: String {    return requestURL   }
     var paramList: [Param] {   return  [search, tag, filters, pageNumber]  }
     var headder: [String:String]? { return nil  }
 
-    
-    
-    
     var requestURL: String {
         return url + searchBy.rawValue
     }
@@ -57,29 +50,28 @@ public struct HNSearch: HTTPURL {
 
     subscript(param: HNSearchParams) -> DataValue? {
         get {
-            //return value for the param
-            switch(param) {
-            case .query:
-                return search.value;
-            case .tags:
+            switch param {
+            case .Query:
+                return search.value
+            case .Tags:
                 return tag.value
-            case .numericFilters:
+            case .NumericFilters:
                 return filters.value
-            case .page:
+            case .Page:
                 return pageNumber.value
             }
 
         }
         set(newValue) {
             //set new value for the param
-            switch(param) {
-            case .query:
+            switch param {
+            case .Query:
                 search.value = newValue
-            case .tags:
+            case .Tags:
                 tag.value = newValue
-            case .numericFilters:
+            case .NumericFilters:
                 filters.value = newValue
-            case .page:
+            case .Page:
                 pageNumber.value = newValue
             }
 
@@ -91,57 +83,55 @@ public struct HNSearch: HTTPURL {
 
 ///
 ///
-enum Tags: DataValue , CustomStringConvertible{
-    
-    case story
-    case comment
-    case poll
-    case pollopt
-    case show_hn
-    case ask_hn
-    case front_page
-    case author_(String)//:USERNAME
-    case story_(String)//:ID
-    
-    private enum HNTags : String {
-        case _story = "story"
-        case _comment = "comment"
-        case _poll = "poll"
-        case _pollopt = "pollopt"
-        case _show_hn = "show_hn"
-        case _ask_hn = "ask_hn"
-        case _front_page = "front_page"
-        case _author_ = "author_"
-        case _story_ = "story_"
+enum Tags: DataValue, CustomStringConvertible {
+    case Story
+    case Comment
+    case Poll
+    case Pollopt
+    case ShowHN
+    case AskHN
+    case FrontPage
+    case Author(String)//:USERNAME
+    case StoryID(String)//:ID
+    private enum HNTags: String {
+        case Story = "story"
+        case Comment = "comment"
+        case Poll = "poll"
+        case Pollopt = "pollopt"
+        case ShowHN = "show_hn"
+        case AskHN = "ask_hn"
+        case FrontPage = "front_page"
+        case Author = "author_"
+        case StoryID = "story_"
 
         static var tags: [HNTags] {
-            return [._story,._comment,._poll,._pollopt,._show_hn,._ask_hn,._front_page,._author_,._story_]
+            return [.Story,
+                .Comment,
+                .Poll,
+                .Pollopt,
+                .Pollopt,
+                .AskHN,
+                .FrontPage,
+                .Author,
+                .StoryID]
         }
-    
     }
-    
     func dataValue() -> String {
-        
-        switch(self) {
-        case .author_(let userName):
-            return HNTags._author_.rawValue + userName
-        case .story_(let id):
-            return HNTags._story_.rawValue + id
+        switch self {
+        case .Author(let userName):
+            return HNTags.Author.rawValue + userName
+        case .StoryID(let id):
+            return HNTags.StoryID.rawValue + id
         default:
-            let strVal:[Tags] = [.story,.comment,.poll,.pollopt,.show_hn,.ask_hn,.front_page]
-            
+            let strVal: [Tags] = [.Story, .Comment, .Poll, .Pollopt, .ShowHN, .AskHN, .FrontPage]
             for (i, value) in strVal.enumerate() {
                 if value == self {
                     return HNTags.tags[i].rawValue
                 }
             }
-            
         }
-        
         return ""
-        
     }
-    
     var description: String {
         return dataValue()
     }
@@ -150,20 +140,19 @@ enum Tags: DataValue , CustomStringConvertible{
 
 extension Tags: Equatable {}
 
-func ==(lhs: Tags, rhs: Tags) -> Bool {
+func == (lhs: Tags, rhs: Tags) -> Bool {
     switch (lhs, rhs) {
-        
-    case (.story, .story),
-    (.comment, .comment),
-    (.poll, .poll),
-    (.pollopt, .pollopt),
-    (.show_hn, .show_hn),
-    (.ask_hn, .ask_hn),
-    (.front_page, .front_page):
+    case (.Story, .Story),
+    (.Comment, .Comment),
+    (.Poll, .Poll),
+    (.Pollopt, .Pollopt),
+    (.ShowHN, .ShowHN),
+    (.AskHN, .AskHN),
+    (.FrontPage, .FrontPage):
         return true
-    case (let .story_(idLHS), let .story_(isRHS)):
+    case (let .StoryID(idLHS), let .StoryID(isRHS)):
         return idLHS == isRHS
-    case (let .author_(userNameLHS), let .author_(userNameRHS)):
+    case (let .Author(userNameLHS), let .Author(userNameRHS)):
         return userNameLHS == userNameRHS
     default:
         return false
@@ -174,36 +163,31 @@ func ==(lhs: Tags, rhs: Tags) -> Bool {
 
 
 
-struct NumericFilters : DataValue , CustomStringConvertible {
+struct NumericFilters: DataValue, CustomStringConvertible {
     enum Numerical: String {
-        case created_at_i = "created_at_i"
-        case points = "points"
-        case num_comments = "num_comments"
+        case CreatedAt = "created_at_i"
+        case Points = "points"
+        case NumComments = "num_comments"
     }
-    
     var filters: NumericFilters.Numerical
-    
     enum Condition: String {
-        case less = "<"
-        case lessAndEqual = "<="
-        case greater = ">"
-        case greaterAndEqual = ">="
+        case Less = "<"
+        case LessAndEqual = "<="
+        case Greater = ">"
+        case GreaterAndEqual = ">="
     }
     var cond: NumericFilters.Condition
     var value: Int
-    
-    
     func dataValue() -> String {
         return filters.rawValue + cond.rawValue + String(value)
     }
-    
     var description: String {
         return dataValue()
     }
 
 }
 
-let t = NumericFilters(filters: .created_at_i, cond: NumericFilters.Condition.less, value: 0)
+//let t = NumericFilters(filters: .created_at_i, cond: NumericFilters.Condition.less, value: 0)
 
 
 

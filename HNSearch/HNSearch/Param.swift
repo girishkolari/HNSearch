@@ -16,14 +16,12 @@ import Foundation
 
 ///
 ///
-public struct Param  {
+public struct Param {
     let key: String
     var value: DataValue?
-    
     init(_ key: String) {
         self.key = key
     }
-    
     var paramValue: [String:String]? {
         if let value = value {
             return [key:value.dataValue()]
